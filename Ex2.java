@@ -133,11 +133,58 @@ class Ex2_6 extends Ex{
         System.out.println("面積は" + (x * y)/2 + "です");
     }   
 }
+class Ex2_7 extends Ex{
+    void execute(){
+        Random rand = new Random();
+        
+        int a = rand.nextInt(9)+1;
+        int b = rand.nextInt(9)-9;
+        int c = rand.nextInt(90)+10;
+    
+    System.out.println("a：" + a + "\nb：" + b + "\nc：" + c);
+    }
+}
+class Ex2_8 extends Ex{
+    void execute(){
+        Scanner stdIn = new Scanner(System.in);
+        System.out.print("整数値：");
 
+        int x = stdIn.nextInt();
+        
+        Random rand = new Random();
+
+        int y = rand.nextInt(11)-5;
+        System.out.println(x + "の±5の値は" + (x + y) + "です。" );
+    }
+}
+class Ex2_9 extends Ex{
+    void execute(){
+        Random rand = new Random();
+
+        double a = rand.nextDouble();
+        double b = rand.nextDouble()*10;
+        double c = rand.nextDouble()*2-1;
+
+        System.out.println("a：" + a +"\nb：" + b + "\nc：" + c);
+    }
+}
+class Ex2_10 extends Ex{
+    void execute(){
+        Scanner stdIn = new Scanner(System.in);
+        
+        System.out.print("性：");
+        String x = stdIn.next();
+
+        System.out.print("名：");
+        String y = stdIn.next();
+        
+        System.out.println("こんにちわ" + (x + y) + "様。");
+    }
+}
 public class Ex2 {
     public static void main(String[] args){
         Ex a;
-        a = new Ex2_0();
+/*        a = new Ex2_0();
         a.execute();
         a = new Ex2_1();
         a.execute();
@@ -151,5 +198,14 @@ public class Ex2 {
         a.execute();
         a = new Ex2_6();
         a.execute();
+*/
+        a = new Ex2_7();
+        a.execute();
+        a = new Ex2_8();
+        a.execute();
+        a = new Ex2_9();
+        a.execute();
+        a = new Ex2_10();
+        a.execute();
     }
-}       
+}   
