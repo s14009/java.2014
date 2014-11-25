@@ -59,7 +59,8 @@ class Ex3{
 	}
 	
 	public String ex3_6(int a){
-		return "dummy";
+        
+        if()
 	}
 
 	public String ex3_7(int a){
